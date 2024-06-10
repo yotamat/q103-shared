@@ -29,3 +29,6 @@ yarn.lock
 
 # Ignore DS files
 .DS_Store
+
+# Ignore uploads directory
+uploads/
