@@ -9,8 +9,8 @@ dist/
 .env.*
 
 # Ignore TypeScript build artifacts
-*.js
-*.js.map
+# *.js
+# *.js.map
 
 # Ignore editor-specific files
 .vscode/
