@@ -12,8 +12,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/upload', upload.single('file'), (req: Request, res: Response) => {
+  console.log(new Date().toISOString(), 'POST /upload', req.file);
+
   if (req.file) {
-    console.log(req.file.path); // Output the path of the uploaded file to the console
     res.json({ response: 'Thanks!' }); // Send a fixed JSON response
   } else {
     res.status(400).json({ error: 'No file uploaded' });
